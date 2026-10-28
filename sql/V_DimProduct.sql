@@ -1,9 +1,6 @@
 -- CRIANDO A TABELA DE PRODUTOS COM AS INFORMAÇÕES DAS DIMENSÕES DE CATEGORIA E SUBCATEGORIA
-
-select * from dbo.DimProduct
-
-create view dbo.V_DimProduct AS
-select  
+CREATE VIEW dbo.V_DimProduct AS
+SELECT 
 	ProductKey,
 	ProductLabel,
 	ProductName,
@@ -27,8 +24,8 @@ select
 	ProductURL,
 	ProductSubcategoryName,
 	ProductCategoryName
-from DimProduct
-inner join DimProductSubcategory 
-	on DimProduct.ProductSubcategoryKey = DimProductSubcategory.ProductSubcategoryKey
-inner join DimProductCategory 
-	on DimProductSubcategory.ProductCategoryKey = DimProductCategory.ProductCategoryKey
+FROM DimProduct
+INNER JOIN DimProductSubcategory 
+	ON DimProduct.ProductSubcategoryKey = DimProductSubcategory.ProductSubcategoryKey
+INNER JOIN DimProductCategory 
+	ON DimProductSubcategory.ProductCategoryKey = DimProductCategory.ProductCategoryKey
