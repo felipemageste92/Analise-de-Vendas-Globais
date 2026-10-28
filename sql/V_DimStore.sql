@@ -1,9 +1,5 @@
 -- CRIANDO A TABELA DE LOJAS COM AS INFORMAÇÕES DA DIMENSÃO DE GEOGRAFIA
-
-SELECT * FROM dbo.DimStore
-SELECT * FROM DimGeography
-
-create view dbo.V_DimStore AS
+CREATE VIEW dbo.V_DimStore AS
 SELECT 
 	StoreKey,
 	DimStore.GeographyKey,
