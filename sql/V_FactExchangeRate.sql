@@ -1,9 +1,4 @@
 -- CRIANDO A TABELA DE EXCHANGE RATE COM AS INFORMAÇÕES DAS TAXAS DE CÂMBIO.
-
-SELECT * FROM FactExchangeRate
-SELECT * FROM DimCurrency
-
-
 CREATE VIEW dbo.V_FactExchangeRate AS
 SELECT
 	ExchangeRateKey,
