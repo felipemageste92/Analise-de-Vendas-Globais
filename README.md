@@ -2,6 +2,10 @@
 
 Dashboard de BI (SQL Server + Power BI + DAX) para diagnóstico de vendas, perdas, rentabilidade e sazonalidade em varejo.
 
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Data Analytics](https://img.shields.io/badge/Data_Analytics-0078D4?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge)
+
 Este projeto apresenta um dashboard analítico construído em Power BI para diagnosticar o desempenho comercial de uma rede de varejo entre 2007 e 2009. O objetivo foi ir além de indicadores estáticos: cada página do relatório responde a uma pergunta de negócio específica — como está o desempenho geral, onde a empresa está perdendo faturamento, quais categorias são mais rentáveis e como as vendas se comportam ao longo do ano.
 
 O projeto cobre toda a cadeia de construção de um produto analítico: extração e modelagem de dados em SQL Server, tratamento em Power Query, modelagem dimensional em Power BI e criação de medidas DAX.
